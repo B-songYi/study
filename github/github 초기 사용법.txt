@@ -1,0 +1,38 @@
+1. github repository 내려 받기 (github repository를 현재 폴더 위치에 내려 받기)
+> git clone [ HTTPS url ] 또는 git init 후 git remote add origin (git 주소)
+
+2. 파일 올리기
+
+* git add 하기
+> git add . : 파일 모두 업로드 하기
+> git add first.txt : first.txt 파일만 업로드 하기
+
+* git commit 하기
+> git commit -m "커밋 메시지"
+
+
+3. git branch 이름 변경
+
+> git branch : 현재 branch 이름 확인
+> git branch -v : 현재 branch 이름과 마지막 commit 메세지 확인
+> git branch -a : 모든 branch 이름 확인
+
+> git branch -M main : 현재 branch 이름을 main으로 변경 (default : master)
+> git branch -m main master : master branch 이름을 main으로 변경
+
+> github에서 처음 branch를 생성할 때 master branch였다.
+   하지만 미국 Black lives matter 운동 연장으로 master-slave를 연상시키는 master 대신 main으로 default branch 이름이 변경되었다.
+
+4. git pull 및 push 하기
+> git pull origin main : 외부 저장소(origin)의 내용을 현재 branch(main)에 추가 저장
+> git push -u origin main : 외부 저장소(origin)에 현재 branch(main)를 올리기
+
+
+
+* git init 과 git clone의 차이
+
+▪️ git init : 빈 git 저장소를 만들거나 기존 저장소를 다시 초기화하는 명령어.
+> git remote add origin (git 주소)로 해당 빈 깃 저장소와 나의 깃허브 저장소를 연결해주는 과정 필요	
+> git remote -v : 현재 연결된 외부 저장소 확인
+
+▪️ git clone : 에 해당하는 저장소를 복제해 새 디렉터리로 가져오는 명령어.
